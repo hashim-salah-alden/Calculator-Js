@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#CCC
+}
+
+.calc-container{
+    padding:10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+/* start output */
+.calc-container .output{
+    background-color:#1d1d1d;
+    width:300px;
+    text-align: right;
+    padding:10px;
+    border-radius: 10px 10px 0 0;
+}
+.calc-container .output .operation{
+    color:#878787;
+    height: 70px;
+    font-size: 2em;
+}
+.calc-container .output .result{
+    color:#FFF;
+    text-align: right;
+    height: 70px;
+    font-size: 3em;
+}
+/* end ouput */
+/* start input */
+.calc-container .input{
+    background-color:#FFF;
+    padding:10px;
+    border-radius: 0 0 10px 10px ;
+}
+.calc-container .input .row{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.calc-container .input  button{
+    flex: 1;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    max-width: 50px;
+    height: 50px;
+    display:block !important
+}
+button#delete{
+    color: #FFF;
+    background-color: #e05046;
+}
+#division,#multiplication,#addition,#subtraction{
+    color:#18b893
+}
+#calculate{
+    color: #FFF;
+    background-color: #46e0bc;
+    max-width: 121px;
+    border-radius: 50px;
+}
+.calc-container .input  button:hover{
+    font-weight: bold;
+    color:#333;
+    font-size: 1.6em;
+}
+/* end input */
